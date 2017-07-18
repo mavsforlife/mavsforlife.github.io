@@ -102,7 +102,7 @@
             
               <li class="archive-list-container">
                 <a href="javascript:;">Archive</a>
-                <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/">2017</a><span class="archive-list-count">1</span></li></ul>
+                <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/">2017</a><span class="archive-list-count">2</span></li></ul>
               </li>
             
           
@@ -159,7 +159,75 @@
 
     <div class="post-list-item article">
       <h3 class="article-header">
-        <a href="/2017/07/17/hello-world/" >
+        <a href="/2017/05/20/article/" >
+  My first article——记录搭建Hexo博客并发布到gitpage
+</a>
+
+      </h3>
+      
+
+      <div class="article-info">
+        <a href="/2017/05/20/article/"><span class="article-date">
+  2017-05-20
+</span>
+</a>
+        
+
+        
+
+      </div>
+      <div class="article-entry">
+        
+          <p>第一篇文章，就记录一下怎么用hexo搭建博客并发布到gitpage吧…</p>
+<h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><ul>
+<li>安装git</li>
+<li>安装node</li>
+<li>注册github账号</li>
+</ul>
+<h3 id="正式安装hexo"><a href="#正式安装hexo" class="headerlink" title="正式安装hexo"></a>正式安装hexo</h3><p>Node和git都安装好以后，首先创建一个文件夹（例如“blog”），然后进入blog文件夹下，在命令行中执行如下命令安装Hexo。</p>
+<p><code>npm install -g hexo</code></p>
+<p>初始化，执行init命令初始化hexo,命令：</p>
+<p><code>hexo init</code></p>
+<p>好啦，至此，全部安装工作已经完成！blog就是你的博客根目录，所有的操作都在里面进行。</p>
+<h4 id="生成静态页面"><a href="#生成静态页面" class="headerlink" title="生成静态页面"></a>生成静态页面</h4><p><code>hexo generate</code>（<code>hexo g</code>也可以）</p>
+<h4 id="本地启动"><a href="#本地启动" class="headerlink" title="本地启动"></a>本地启动</h4><p>启动本地服务，进行文章预览调试，命令：</p>
+<p><code>hexo server</code>(<code>hero s</code>也可以)</p>
+<p>浏览器输入<a href="http://localhost:4000，就可以在浏览器中预览啦～～～" target="_blank" rel="external">http://localhost:4000，就可以在浏览器中预览啦～～～</a></p>
+<h3 id="配置Github"><a href="#配置Github" class="headerlink" title="配置Github"></a>配置Github</h3><p>建立Repository</p>
+<p>建立与你用户名对应的仓库，仓库名必须为【your_user_name.github.io】，固定写法</p>
+<p>然后建立关联，我的blog在本地/Users/leopard/blog，blog是我之前建的东西也全在这里面，有：</p>
+<pre><code>_config.yml    node_modules    public      source
+
+db.json        package.json    scaffolds  themes
+</code></pre><p>现在我们需要_config.yml文件，来建立关联，命令：</p>
+<p>vi _config.yml</p>
+<p>翻到最下面，改成我这样子的</p>
+<p>deploy:</p>
+<pre><code>type: git
+
+repo: https://github.com/leopardpan/your_user_name.github.io.git
+
+branch: master
+</code></pre><p>然后，执行配置命令：</p>
+<p><code>hexo deploy</code></p>
+<p>就配置成功啦～～～<br>撒花～～～</p>
+<p>在浏览器中输入http://<your_user_name>.github.io，就可以访问你的个人博客啦。</your_user_name></p>
+<p>如果你在设置的过程中有什么不懂得，可以去<a href="http://hexo.io/" target="_blank" rel="external">hexo.io</a>上查看～～</p>
+
+        
+      </div>
+    </div>
+
+  
+
+  
+  
+    
+  
+
+    <div class="post-list-item article">
+      <h3 class="article-header">
+        <a href="/2017/04/18/hello-world/" >
   Hello World
 </a>
 
@@ -167,8 +235,8 @@
       
 
       <div class="article-info">
-        <a href="/2017/07/17/hello-world/"><span class="article-date">
-  2017-07-17
+        <a href="/2017/04/18/hello-world/"><span class="article-date">
+  2017-04-18
 </span>
 </a>
         
