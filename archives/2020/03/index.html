@@ -8,20 +8,19 @@
 
 <title>
   
-    My first article——记录搭建Hexo博客并发布到gitpage
+    Archive: 2020/3
   
 </title>
 
-<meta name="description" content="第一篇文章，就记录一下怎么用hexo搭建博客并发布到gitpage吧… 准备工作 安装git 安装node 注册github账号  正式安装hexoNode和git都安装好以后，首先创建一个文件夹（例如“blog”），然后进入blog文件夹下，在命令行中执行如下命令安装Hexo。 npm install -g hexo 初始化，执行init命令初始化hexo,命令： hexo init 好啦，至此">
-<meta property="og:type" content="article">
-<meta property="og:title" content="My first article——记录搭建Hexo博客并发布到gitpage">
-<meta property="og:url" content="https://mavsforlife.github.io/2017/05/20/article/index.html">
+<meta name="description" content="This is my blog!">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Victor’s home">
+<meta property="og:url" content="https://mavsforlife.github.io/archives/2020/03/index.html">
 <meta property="og:site_name" content="Victor’s home">
-<meta property="og:description" content="第一篇文章，就记录一下怎么用hexo搭建博客并发布到gitpage吧… 准备工作 安装git 安装node 注册github账号  正式安装hexoNode和git都安装好以后，首先创建一个文件夹（例如“blog”），然后进入blog文件夹下，在命令行中执行如下命令安装Hexo。 npm install -g hexo 初始化，执行init命令初始化hexo,命令： hexo init 好啦，至此">
-<meta property="og:updated_time" content="2017-07-19T12:57:54.000Z">
+<meta property="og:description" content="This is my blog!">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="My first article——记录搭建Hexo博客并发布到gitpage">
-<meta name="twitter:description" content="第一篇文章，就记录一下怎么用hexo搭建博客并发布到gitpage吧… 准备工作 安装git 安装node 注册github账号  正式安装hexoNode和git都安装好以后，首先创建一个文件夹（例如“blog”），然后进入blog文件夹下，在命令行中执行如下命令安装Hexo。 npm install -g hexo 初始化，执行init命令初始化hexo,命令： hexo init 好啦，至此">
+<meta name="twitter:title" content="Victor’s home">
+<meta name="twitter:description" content="This is my blog!">
 
 
   <link rel="alternative" href="/atom.xml" title="Victor’s home" type="application/atom+xml">
@@ -143,84 +142,63 @@
       
         <div style="max-width: 1000px">
       
-          <article id="post-article" class="article article-type-post">
+          
+
   
-    <h1 class="article-header">
-      My first article——记录搭建Hexo博客并发布到gitpage
-    </h1>
   
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <h1><a href="/archives/2020" class="archive-year">2020</a></h1>
+        </div>
+        <div class="post-list">
+    
   
 
-  <div class="article-info">
-    <span class="article-date">
-  2017-05-20
+    <div class="post-list-item article">
+      <h3 class="article-header">
+        <a href="/2020/03/10/颓废太久，反思下/" >
+  颓废太久，反思下
+</a>
+
+      </h3>
+      
+
+      <div class="article-info">
+        <a href="/2020/03/10/颓废太久，反思下/"><span class="article-date">
+  2020-03-10
 </span>
-
-    
-
-    
-
-  </div>
-  <div class="article-entry">
-    <p>第一篇文章，就记录一下怎么用hexo搭建博客并发布到gitpage吧…</p>
-<h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><ul>
-<li>安装git</li>
-<li>安装node</li>
-<li>注册github账号</li>
-</ul>
-<h3 id="正式安装hexo"><a href="#正式安装hexo" class="headerlink" title="正式安装hexo"></a>正式安装hexo</h3><p>Node和git都安装好以后，首先创建一个文件夹（例如“blog”），然后进入blog文件夹下，在命令行中执行如下命令安装Hexo。</p>
-<p><code>npm install -g hexo</code></p>
-<p>初始化，执行init命令初始化hexo,命令：</p>
-<p><code>hexo init</code></p>
-<p>好啦，至此，全部安装工作已经完成！blog就是你的博客根目录，所有的操作都在里面进行。</p>
-<h4 id="生成静态页面"><a href="#生成静态页面" class="headerlink" title="生成静态页面"></a>生成静态页面</h4><p><code>hexo generate</code>（<code>hexo g</code>也可以）</p>
-<h4 id="本地启动"><a href="#本地启动" class="headerlink" title="本地启动"></a>本地启动</h4><p>启动本地服务，进行文章预览调试，命令：</p>
-<p><code>hexo server</code>(<code>hero s</code>也可以)</p>
-<p>浏览器输入<code>http://localhost:4000</code>，就可以在浏览器中预览啦～～～</p>
-<h3 id="配置Github"><a href="#配置Github" class="headerlink" title="配置Github"></a>配置Github</h3><p>建立Repository</p>
-<p>建立与你用户名对应的仓库，仓库名必须为【your_user_name.github.io】，固定写法</p>
-<p>然后建立关联，我的blog在本地/Users/blog/hexo，blog是我之前建的东西也全在这里面，有：</p>
-<pre><code>_config.yml    node_modules    public      source
-
-db.json        package.json    scaffolds  themes
-</code></pre><p>现在我们需要_config.yml文件，来建立关联，命令：</p>
-<p>vi _config.yml</p>
-<p>翻到最下面，改成我这样子的</p>
-<p>deploy:</p>
-<pre><code>type: git
-
-repo: https://github.com/your_user_name/your_user_name.github.io.git
-
-branch: master
-</code></pre><p>然后，执行配置命令：</p>
-<p><code>hexo deploy</code></p>
-<p>就配置成功啦～～～<br>撒花～～～</p>
-<p>在浏览器中输入<a href="http://your_user_name.github.io" target="_blank" rel="external">http://your_user_name.github.io</a> ，就可以访问你的个人博客啦。</p>
-<p>如果你在设置的过程中有什么不懂得，可以去<a href="http://hexo.io/" target="_blank" rel="external">hexo.io</a>上查看～～</p>
-
-  </div>
-  <footer class="article-footer">
-    
-  <div class="cc">
-    <a href="http://creativecommons.org/licenses/by-sa/4.0/deed.en" target="_blank" title="Attribution-ShareAlike">
-      <img src="/images/cc/cc.png">
-      
-          <img src="/images/cc/by.png">
+</a>
         
-          <img src="/images/cc/sa.png">
-      
-      <span>
-        This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
-      </span>
-    </a>
-  </div>
+
+        
+	<span class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/随笔/">随笔</a></li></ul>
+	</span>
 
 
-    
+      </div>
+      <div class="article-entry">
+        
+          <p>2019年经历了从特别忙到特别闲的工作状态的转变，自从跳槽到了新公司之后，有了大把的闲暇时间，整个人一下子从紧绷的状态松弛了下来，变成了一个十足的颓废逼…以前总是抱怨工作太忙，压榨了我的自我学习时间，结果如愿以偿有了空闲时间之后，并没有像之前想象的那样，把工作以外的时间利用起来，相反的，我把这些宝贵的时间用来玩游戏，发呆，几乎全浪费了。</p>
+<p>趁着疫情期间，在家办公的间隙，好好反思下。</p>
+<h2 id="2019年我都干了些啥？"><a href="#2019年我都干了些啥？" class="headerlink" title="2019年我都干了些啥？"></a>2019年我都干了些啥？</h2><ul>
+<li>换了工作</li>
+<li>找到了一个很爱我的女朋友～</li>
+<li>在苏州买了房</li>
+<li>终于考出了驾照</li>
+</ul>
+<p>以上都是在工作特别忙的那段时间，充分利用仅有的周末时间“高效”完成的，反而在换了个强度相对不大的工作以后，啥也没干成，原本想着在这里可以实现work life balance，能够静下心来沉淀自己，修炼内功，结果把自己给练歪了，练出来一门懒功。</p>
+<h2 id="反思2020，不立flag，从眼前的事情做起"><a href="#反思2020，不立flag，从眼前的事情做起" class="headerlink" title="反思2020，不立flag，从眼前的事情做起"></a>反思2020，不立flag，从眼前的事情做起</h2><p>由于疫情的影响，尽管已经3月份了，自从春节放假之后还没有去办公室办过一天公，一直处于远程工作的状态，导致我有种假期还没有结束的错觉，整个人也没有办法紧张起来。</p>
+<p>昨天去把去年买的房子给收了回来，看着空荡荡的房子，有点头大。作为一个装修小白，我完全不知道该从哪里开始装修的第一步。不过，好久没有碰到这种有挑战的事情了，换个角度想了想，内心甚至隐隐有点激动？那么，2020，就从装修开始吧，在工作之余，完成房子的装修。期望能从这里开始，一点点转变自己的心态，变得不再那么懒惰颓废，加油，共勉。</p>
 
-  </footer>
-</article>
+        
+      </div>
+    </div>
 
+  
 
 
 
